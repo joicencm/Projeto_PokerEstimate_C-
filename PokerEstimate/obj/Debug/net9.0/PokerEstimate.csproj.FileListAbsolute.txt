@@ -96,3 +96,4 @@ C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\refi
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\PokerEstimate.pdb
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\PokerEstimate.genruntimeconfig.cache
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\ref\PokerEstimate.dll
+C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\PokerEstimate.sourcelink.json
