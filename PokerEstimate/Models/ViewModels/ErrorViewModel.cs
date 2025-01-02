@@ -1,4 +1,4 @@
-namespace PokerEstimate.Models
+namespace PokerEstimate.Models.ViewModels
 {
     public class ErrorViewModel
     {

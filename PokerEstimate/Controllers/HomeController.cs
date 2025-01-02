@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using PokerEstimate.Models;
+using PokerEstimate.Models.ViewModels;
 
 namespace PokerEstimate.Controllers
 {
