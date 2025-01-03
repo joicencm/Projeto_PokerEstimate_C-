@@ -1,7 +1,10 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Página Inicial";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Estime Suas Tarefas</h1>
-</div>
+<h1 style="text-align: center;">Crie sua sala Estimate</h1>
+
+<form asp-action="CriarSala" method="post" style="text-align: center;">
+    <input type="text" name="nomeCriador" placeholder="Digite seu nome" required style="padding: 5px; font-size: 16px;" />
+    <button type="submit" style="padding: 10px 20px; font-size: 16px;">Crie sua sala Estimate</button>
+</form>

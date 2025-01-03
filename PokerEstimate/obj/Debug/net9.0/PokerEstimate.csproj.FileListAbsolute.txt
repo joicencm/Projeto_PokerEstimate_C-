@@ -17,7 +17,6 @@ C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\Poke
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\scopedcss\bundle\PokerEstimate.styles.css
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\scopedcss\projectbundle\PokerEstimate.bundle.scp.css
-C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\compressed\pi1dxq8un4-b9sayid5wm.gz
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\compressed\37q63ie99d-61n19gt1b8.gz
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\compressed\dq2d10x0pt-xtxxf3hu2r.gz
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\compressed\l3qmnkgwth-bqjiyaj88i.gz
@@ -97,3 +96,4 @@ C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\Poke
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\PokerEstimate.genruntimeconfig.cache
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\ref\PokerEstimate.dll
 C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\PokerEstimate.sourcelink.json
+C:\Projetos\Desenvolvimento\C#\PokerEstimate\PokerEstimate\obj\Debug\net9.0\compressed\pi1dxq8un4-ba8nx8d1ht.gz

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "34dcIYsCillycvzsv2QT9EZ0npeb/lt/x9atwHIHyFs=",
+  "Hash": "DfBIVqVyEjsWblu82BX6mb7wdhb4DpITae7Uh5U19yU=",
   "Source": "PokerEstimate",
   "BasePath": "_content/PokerEstimate",
   "Mode": "Default",
@@ -899,12 +899,12 @@
       "OriginalItemSpec": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-b9sayid5wm.gz",
+      "Identity": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-ba8nx8d1ht.gz",
       "SourceId": "PokerEstimate",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/PokerEstimate",
-      "RelativePath": "css/site#[.{fingerprint=b9sayid5wm}]?.css.gz",
+      "RelativePath": "css/site#[.{fingerprint=ba8nx8d1ht}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -913,8 +913,8 @@
       "RelatedAsset": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "wf4wcyqcqt",
-      "Integrity": "fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=",
+      "Fingerprint": "5c3qlcktij",
+      "Integrity": "mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\wwwroot\\css\\site.css"
@@ -1417,8 +1417,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "b9sayid5wm",
-      "Integrity": "j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=",
+      "Fingerprint": "ba8nx8d1ht",
+      "Integrity": "s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
@@ -2728,13 +2728,13 @@
   ],
   "Endpoints": [
     {
-      "Route": "css/site.b9sayid5wm.css",
-      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-b9sayid5wm.gz",
+      "Route": "css/site.ba8nx8d1ht.css",
+      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-ba8nx8d1ht.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.004424778761"
         }
       ],
       "ResponseHeaders": [
@@ -2744,15 +2744,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "225"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2772,13 +2772,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ba8nx8d1ht"
         },
         {
           "Name": "label",
@@ -2786,12 +2786,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css",
+      "Route": "css/site.ba8nx8d1ht.css",
       "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2801,7 +2801,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "401"
         },
         {
           "Name": "Content-Type",
@@ -2809,11 +2809,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2823,7 +2823,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ba8nx8d1ht"
         },
         {
           "Name": "label",
@@ -2831,13 +2831,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM="
         }
       ]
     },
     {
-      "Route": "css/site.b9sayid5wm.css.gz",
-      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-b9sayid5wm.gz",
+      "Route": "css/site.ba8nx8d1ht.css.gz",
+      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-ba8nx8d1ht.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2846,7 +2846,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "225"
         },
         {
           "Name": "Content-Type",
@@ -2854,11 +2854,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2876,7 +2876,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "b9sayid5wm"
+          "Value": "ba8nx8d1ht"
         },
         {
           "Name": "label",
@@ -2884,18 +2884,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8="
         }
       ]
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-b9sayid5wm.gz",
+      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-ba8nx8d1ht.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.003125000000"
+          "Quality": "0.004424778761"
         }
       ],
       "ResponseHeaders": [
@@ -2905,15 +2905,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "225"
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2933,13 +2933,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "W/\"s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM="
         }
       ]
     },
@@ -2954,7 +2954,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "667"
+          "Value": "401"
         },
         {
           "Name": "Content-Type",
@@ -2962,11 +2962,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg=\""
+          "Value": "\"s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2976,13 +2976,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-j6fhJSuuyLpOSLuPJU0TsDV0iNjor5S3rDnvxJrt4bg="
+          "Value": "sha256-s3p6p8FwZBl3xMxppVf8NsPStADmVg1T6xmGqRLsYMM="
         }
       ]
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-b9sayid5wm.gz",
+      "AssetFile": "C:\\Projetos\\Desenvolvimento\\C#\\PokerEstimate\\PokerEstimate\\obj\\Debug\\net9.0\\compressed\\pi1dxq8un4-ba8nx8d1ht.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2991,7 +2991,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "319"
+          "Value": "225"
         },
         {
           "Name": "Content-Type",
@@ -2999,11 +2999,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I=\""
+          "Value": "\"mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 01 Jan 2025 14:15:54 GMT"
+          "Value": "Fri, 03 Jan 2025 01:56:51 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,7 +3021,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fNKkLSNFLZMVTc2zVrpMXQqOwPU3sU4GWcfEbCR2V1I="
+          "Value": "sha256-mwc7KnjSSlLt5QwGLoiefw9HIO/QdFB4QiZxoyj1Qo8="
         }
       ]
     },

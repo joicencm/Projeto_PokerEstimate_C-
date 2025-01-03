@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokerEstimate")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+669ad2c9214e6aac77fdee37ffa0d57a29d68a78")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c7f2c5395bd8c832d7f767e5bba79e237dca4a8f")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokerEstimate")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokerEstimate")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
