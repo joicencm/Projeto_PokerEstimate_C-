@@ -1,62 +1,50 @@
 ﻿@{
     ViewData["Title"] = "Painel";
     var sala = ViewBag.Sala as PokerEstimate.Models.Sala;
+    var nomeUsuario = ViewBag.NomeUsuario as string;
+    var ehCriador = (bool)ViewBag.EhCriador;
 }
 
-<h1 style="text-align: center;">Sala de Estimativas: @sala.Id</h1>
+<h1 style="text-align: center;">Sala de Estimativas</h1>
+<p style="text-align: center;"><b>ID da Sala:</b> @sala.Id</p>
 <p style="text-align: center;"><b>Criador:</b> @sala.Criador</p>
 
-<!-- Formulário para adicionar usuários -->
-<div style="margin: 20px auto; text-align: center;">
-    <form asp-action="AdicionarUsuario" method="post">
+<h2 style="text-align: center;">Bem-vindo, @nomeUsuario!</h2>
+
+<div style="text-align: center; margin: 20px 0;">
+    <h3>Selecione sua estimativa:</h3>
+    @for (int i = 0; i <= 13; i++)
+    {
+    <form asp-action="RegistrarEstimativa" method="post" style="display: inline-block;">
         <input type="hidden" name="id" value="@sala.Id" />
-        <input type="text" name="nome" placeholder="Digite seu nome" required style="padding: 5px; font-size: 16px;" />
-        <button type="submit" style="padding: 5px 10px; font-size: 16px;">Entrar na sala</button>
+        <input type="hidden" name="nome" value="@nomeUsuario" />
+        <input type="hidden" name="ponto" value="@i" />
+        <button type="submit" style="padding: 10px 20px; margin: 5px;">@i</button>
+    </form>
+    }
+    <form asp-action="RegistrarEstimativa" method="post" style="display: inline-block;">
+        <input type="hidden" name="id" value="@sala.Id" />
+        <input type="hidden" name="nome" value="@nomeUsuario" />
+        <input type="hidden" name="ponto" value="-1" />
+        <button type="submit" style="padding: 10px 20px; margin: 5px;">?</button>
     </form>
 </div>
 
-<!-- Formulário para registrar estimativas -->
-<div style="text-align: center;">
-    <div style="margin: 20px 0;">
-        @for (int i = 0; i <= 13; i++)
-        {
-        <form asp-action="RegistrarEstimativa" method="post" style="display: inline-block;">
-            <input type="hidden" name="id" value="@sala.Id" />
-            <input type="hidden" name="ponto" value="@i" />
-            <button type="submit" style="padding: 10px 20px; margin: 5px;">@i</button>
-        </form>
-        }
-        <form asp-action="RegistrarEstimativa" method="post" style="display: inline-block;">
-            <input type="hidden" name="id" value="@sala.Id" />
-            <input type="hidden" name="ponto" value="-1" />
-            <button type="submit" style="padding: 10px 20px; margin: 5px;">?</button>
-        </form>
-    </div>
-</div>
+<h3 style="text-align: center;">Usuários na Sala</h3>
+<ul style="text-align: center; list-style: none;">
+    @foreach (var usuario in sala.Usuarios)
+    {
+    <li><b>@usuario.Nome:</b> @(usuario.Ponto.HasValue ? usuario.Ponto.ToString() : "Aguardando voto")</li>
+    }
+</ul>
 
-<!-- Exibe usuários e seus votos -->
-<div style="margin-top: 20px; text-align: center;">
-    <h2>Usuários</h2>
-    <ul>
-        @foreach (var usuario in sala.Usuarios)
-        {
-        <li>
-            <b>@usuario.Nome:</b> @if (usuario.Ponto.HasValue) { <span>@usuario.Ponto</span> } else { <span>Aguardando estimativa</span> }
-        </li>
-        }
-    </ul>
-</div>
-
-<!-- Limpar votos e mostrar estimativas -->
-<div style="margin: 20px auto; text-align: center;">
-    <form asp-action="DeletarVotos" method="post" style="display: inline-block;">
+@if (ehCriador)
+{
+<div style="text-align: center; margin-top: 20px;">
+    <form asp-action="DeletarVotos" method="post">
         <input type="hidden" name="id" value="@sala.Id" />
         <input type="hidden" name="nomeCriador" value="@sala.Criador" />
-        <button type="submit" style="padding: 5px 10px; font-size: 16px;">Limpar Votos</button>
-    </form>
-
-    <form asp-action="MostrarEstimativas" method="get" style="display: inline-block;">
-        <input type="hidden" name="id" value="@sala.Id" />
-        <button type="submit" style="padding: 5px 10px; font-size: 16px;">Mostrar Estimativas</button>
+        <button type="submit" style="padding: 10px 20px;">Limpar Votos</button>
     </form>
 </div>
+}

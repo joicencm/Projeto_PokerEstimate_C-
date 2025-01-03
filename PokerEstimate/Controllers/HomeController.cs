@@ -7,84 +7,46 @@ namespace PokerEstimate.Controllers
 {
     public class HomeController : Controller
     {
-        // Lista estática para armazenar todas as salas
+        // Lista estática para armazenar as salas
         private static List<Sala> salas = new List<Sala>();
 
-        // Ação para exibir a página inicial
+        // Página inicial: Criação de sala ou entrada na sala existente
         public IActionResult Index()
         {
             return View();
         }
 
-        // Ação para criar uma nova sala
+        // Criação de uma nova sala pelo criador
         [HttpPost]
         public IActionResult CriarSala(string nomeCriador)
         {
             if (!string.IsNullOrEmpty(nomeCriador))
             {
                 var sala = new Sala { Criador = nomeCriador };
-                salas.Add(sala);  // Adiciona a sala à lista de salas
-                return RedirectToAction("Painel", new { id = sala.Id });  // Redireciona para o painel da sala
+                salas.Add(sala);
+                return RedirectToAction("Painel", new { id = sala.Id, nome = nomeCriador });
             }
-            return RedirectToAction("Index");  // Redireciona para a página inicial se não houver nome
+            return RedirectToAction("Index");
         }
 
-        // Ação para exibir o painel de estimativas de uma sala
-        public IActionResult Painel(string id)
-        {
-            var sala = salas.FirstOrDefault(s => s.Id == id);
-            if (sala == null)
-            {
-                return NotFound("Sala não encontrada.");
-            }
-
-            ViewBag.Sala = sala;  // Passa a sala para a view
-            return View();
-        }
-
-        // Ação para adicionar um novo usuário à sala
+        // Entrada na sala existente com ID e nome
         [HttpPost]
-        public IActionResult AdicionarUsuario(string id, string nome)
+        public IActionResult EntrarSala(string id, string nome)
         {
             var sala = salas.FirstOrDefault(s => s.Id == id);
             if (sala != null && !string.IsNullOrEmpty(nome))
             {
-                sala.Usuarios.Add(new Usuario { Nome = nome });  // Adiciona o usuário
-            }
-            return RedirectToAction("Painel", new { id });
-        }
-
-        // Ação para registrar a estimativa (ponto) de um usuário
-        [HttpPost]
-        public IActionResult RegistrarEstimativa(string id, string nome, int ponto)
-        {
-            var sala = salas.FirstOrDefault(s => s.Id == id);
-            var usuario = sala?.Usuarios.FirstOrDefault(u => u.Nome == nome);
-            if (usuario != null)
-            {
-                usuario.Ponto = ponto;  // Registra o ponto
-            }
-            return RedirectToAction("Painel", new { id });
-        }
-
-        // Ação para deletar todos os votos de uma sala (apenas o criador pode fazer isso)
-        [HttpPost]
-        public IActionResult DeletarVotos(string id, string nomeCriador)
-        {
-            var sala = salas.FirstOrDefault(s => s.Id == id);
-            if (sala != null && sala.Criador == nomeCriador)
-            {
-                // Limpa os votos de todos os usuários
-                foreach (var usuario in sala.Usuarios)
+                if (!sala.Usuarios.Any(u => u.Nome == nome))
                 {
-                    usuario.Ponto = null;
+                    sala.Usuarios.Add(new Usuario { Nome = nome });
                 }
+                return RedirectToAction("Painel", new { id = sala.Id, nome });
             }
-            return RedirectToAction("Painel", new { id });
+            return RedirectToAction("Index");
         }
 
-        // Ação para exibir as estimativas feitas pelos usuários
-        public IActionResult MostrarEstimativas(string id)
+        // Exibição do painel da sala
+        public IActionResult Painel(string id, string nome)
         {
             var sala = salas.FirstOrDefault(s => s.Id == id);
             if (sala == null)
@@ -93,7 +55,37 @@ namespace PokerEstimate.Controllers
             }
 
             ViewBag.Sala = sala;
-            return View("Estimativas", sala.Usuarios);  // Exibe as estimativas feitas pelos usuários
+            ViewBag.NomeUsuario = nome;
+            ViewBag.EhCriador = sala.Criador == nome;  // Verifica se o usuário é o criador
+            return View();
+        }
+
+        // Registro de estimativa por um participante
+        [HttpPost]
+        public IActionResult RegistrarEstimativa(string id, string nome, int ponto)
+        {
+            var sala = salas.FirstOrDefault(s => s.Id == id);
+            var usuario = sala?.Usuarios.FirstOrDefault(u => u.Nome == nome);
+            if (usuario != null)
+            {
+                usuario.Ponto = ponto;
+            }
+            return RedirectToAction("Painel", new { id, nome });
+        }
+
+        // Limpeza de votos (apenas pelo criador da sala)
+        [HttpPost]
+        public IActionResult DeletarVotos(string id, string nomeCriador)
+        {
+            var sala = salas.FirstOrDefault(s => s.Id == id);
+            if (sala != null && sala.Criador == nomeCriador)
+            {
+                foreach (var usuario in sala.Usuarios)
+                {
+                    usuario.Ponto = null;
+                }
+            }
+            return RedirectToAction("Painel", new { id, nome = nomeCriador });
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     public class Usuario
     {
-        public string Nome { get; set; }  // Nome do usuário
-        public int? Ponto { get; set; }  // Ponto estimado (pode ser nulo)
+        public string Nome { get; set; }
+        public int? Ponto { get; set; }
     }
 }
